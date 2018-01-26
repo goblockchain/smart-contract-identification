@@ -1,0 +1,369 @@
+{
+  "contractName": "IPerson",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_addressPerson",
+          "type": "address"
+        },
+        {
+          "name": "_isValid",
+          "type": "bool"
+        }
+      ],
+      "name": "sendValidationIdentity",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newMail",
+          "type": "string"
+        }
+      ],
+      "name": "changeEmail",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_contractPersonValidator",
+          "type": "address"
+        },
+        {
+          "name": "isValid",
+          "type": "bool"
+        }
+      ],
+      "name": "validatorIdentity",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.18;\n\ncontract IPerson {\n    \n    function changeEmail(string _newMail) public;\n    function sendValidationIdentity(address _addressPerson, bool _isValid) public;\n    function validatorIdentity(address _contractPersonValidator, bool isValid) public;\n}",
+  "sourcePath": "/Users/hgleite/Documents/henrique/GoBlockchain/smart-contract-identification/contracts/IPerson.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/hgleite/Documents/henrique/GoBlockchain/smart-contract-identification/contracts/IPerson.sol",
+      "exportedSymbols": {
+        "IPerson": [
+          21
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            21
+          ],
+          "name": "IPerson",
+          "scope": 22
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "changeEmail",
+              "payable": false,
+              "scope": 21,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_newMail",
+                      "scope": 6,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 2,
+                        "name": "ElementaryTypeName",
+                        "src": "75:6:0"
+                      }
+                    ],
+                    "id": 3,
+                    "name": "VariableDeclaration",
+                    "src": "75:15:0"
+                  }
+                ],
+                "id": 4,
+                "name": "ParameterList",
+                "src": "74:17:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5,
+                "name": "ParameterList",
+                "src": "98:0:0"
+              }
+            ],
+            "id": 6,
+            "name": "FunctionDefinition",
+            "src": "54:45:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "sendValidationIdentity",
+              "payable": false,
+              "scope": 21,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_addressPerson",
+                      "scope": 13,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 7,
+                        "name": "ElementaryTypeName",
+                        "src": "136:7:0"
+                      }
+                    ],
+                    "id": 8,
+                    "name": "VariableDeclaration",
+                    "src": "136:22:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_isValid",
+                      "scope": 13,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 9,
+                        "name": "ElementaryTypeName",
+                        "src": "160:4:0"
+                      }
+                    ],
+                    "id": 10,
+                    "name": "VariableDeclaration",
+                    "src": "160:13:0"
+                  }
+                ],
+                "id": 11,
+                "name": "ParameterList",
+                "src": "135:39:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 12,
+                "name": "ParameterList",
+                "src": "181:0:0"
+              }
+            ],
+            "id": 13,
+            "name": "FunctionDefinition",
+            "src": "104:78:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "validatorIdentity",
+              "payable": false,
+              "scope": 21,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_contractPersonValidator",
+                      "scope": 20,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 14,
+                        "name": "ElementaryTypeName",
+                        "src": "214:7:0"
+                      }
+                    ],
+                    "id": 15,
+                    "name": "VariableDeclaration",
+                    "src": "214:32:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "isValid",
+                      "scope": 20,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 16,
+                        "name": "ElementaryTypeName",
+                        "src": "248:4:0"
+                      }
+                    ],
+                    "id": 17,
+                    "name": "VariableDeclaration",
+                    "src": "248:12:0"
+                  }
+                ],
+                "id": 18,
+                "name": "ParameterList",
+                "src": "213:48:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 19,
+                "name": "ParameterList",
+                "src": "268:0:0"
+              }
+            ],
+            "id": 20,
+            "name": "FunctionDefinition",
+            "src": "187:82:0"
+          }
+        ],
+        "id": 21,
+        "name": "ContractDefinition",
+        "src": "26:245:0"
+      }
+    ],
+    "id": 22,
+    "name": "SourceUnit",
+    "src": "0:271:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-25T19:20:26.022Z"
+}

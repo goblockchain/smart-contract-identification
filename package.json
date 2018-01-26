@@ -1,0 +1,33 @@
+{
+  "name": "smart-contract-identification",
+  "version": "0.0.1",
+  "description": "Project responsible to create person identification in Blockchain",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "console": "truffle console"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goblockchain/smart-contract-identification.git"
+  },
+  "keywords": [
+    "ethereum",
+    "blockchain",
+    "identification"
+  ],
+  "author": "GoBlockchain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goblockchain/smart-contract-identification/issues"
+  },
+  "homepage": "https://github.com/goblockchain/smart-contract-identification#readme",
+  "dependencies": {
+    "web3": "^0.20.4",
+    "zeppelin-solidity": "1.6.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.1"
+  },
+  "devDependencies": {}
+}
